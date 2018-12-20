@@ -1,0 +1,14 @@
+/* pages/shoppingBag/shoppingBag.wxss */
+.spPrice{
+   color: #e17b34;
+}
+
+.spTitle{
+  color:#302833;
+}
+
+.textCenter{
+  text-align: center;
+  margin-top: 200rpx;
+  color:#7d7d7d;
+}

@@ -1,0 +1,51 @@
+<scroll-view class='dContainer'>
+  <view class='mask' wx:if="{{IsAdd}}"></view>
+  <text class="gName">{{gDetail.gName}}</text>
+  <view class="mainImg"><image src='{{gDetail.gImg1Src}}'></image></view>
+  <view class='gPrice'>
+  <text>{{gDetail.gPrice}}</text>
+  </view>
+  <view  class="gTbUrl">
+  <text>前往手机淘宝</text>
+  <text class="shopName">搜索店铺：玛格丽特独立女装</text>
+  <text>获取大额优惠券</text>
+  </view>
+  <view class="gDBox">
+    <view style='background-image:url("{{gDetail.gImg2Src}}")'></view>
+    <view style='background-image:url("{{gDetail.gImg3Src}}")'></view>
+  </view>
+  <view class='gBtn'>
+    <button bindtap='addBag'>加入购物袋</button>
+    <button bindtap='buyNow'>立即购买</button>
+  </view>
+  <view class='add' wx:if="{{IsAdd}}">
+    <view class="weui-cells__title">请选择颜色</view>
+    <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioColorChange">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItemsColor}}" wx:key="value">
+                    <radio class="weui-check" value="{{index}}" checked=""/>
+
+                    <view class="weui-cell__bd">{{item}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{index==checkedColorNum}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+    </view>
+    <view class="weui-cells__title">请选择尺码</view>
+    <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioSizeChange">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItemsSize}}" wx:key="value">
+                    <radio class="weui-check" value="{{index}}" checked=""/>
+
+                    <view class="weui-cell__bd">{{item}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{index==checkedSizeNum}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+    </view>
+    <button class="weui-btn" type="primary" bindtap='Adding'>确定</button>
+  </view>
+  <view class='pay'></view>
+</scroll-view>

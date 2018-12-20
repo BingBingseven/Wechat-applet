@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "../shoppingBag/shoppingBag",
+    "../payment/payment"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "M A R G U E R I T E",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "../shoppingBag/shoppingBag",
+        "text": "加入购物车"
+      },
+      {
+        "pagePath": "../payment/payment",
+        "text": "立即购买"
+      }
+    ],
+    "backgroundColor": "#f3f3f3",
+    "selectedColor": "#000"
+  }
+}

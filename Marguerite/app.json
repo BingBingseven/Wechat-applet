@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/shoppingBag/shoppingBag",
+    "pages/payment/payment"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "M A R G U E R I T E",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页"
+    },{
+      "pagePath":"pages/shoppingBag/shoppingBag",
+      "text":"购物袋"
+    }],
+    "backgroundColor":"#f3f3f3",
+    "selectedColor":"#000"
+  }
+}

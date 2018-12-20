@@ -1,0 +1,51 @@
+<scroll-view>
+   <view id="paymentGoods" class="weui-panel__bd" wx:for="{{paymentBagList}}" wx:key="value">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.gImg1Src}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__desc spTitle">{{item.gName}}</view>
+            <view class="weui-media-box__desc ">{{item.CheckedColor}} + {{item.CheckedSize}} 码</view>
+            <view class="weui-media-box__info__meta spPrice">{{item.gPrice}}</view>
+          </view>
+        </navigator>
+    </view>
+    <view id="paymentAddr" class="weui-cells weui-cells_form">
+            <view class="weui-cell">
+                <view class="weui-cell__hd"><label class="weui-label">姓名 </label></view>
+                <view class="weui-cell__ft">
+                    <input class="weui-input" type="text" placeholder="请填写姓名"  bindblur="getCName"></input>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <label class="weui-label">手机 </label>
+                </view>
+                <view class="weui-cell__ft">
+                    <input class="weui-input" type="tel" placeholder="请输入手机号" bindblur="getCTel"></input>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__hd"><label class="weui-label">详细地址 </label></view>
+                <view class="weui-cell__ft">
+                    <input class="weui-input" type="textarea" placeholder="请填写详细地址" bindblur="getCAddr"></input>
+                </view>
+            </view>
+            <view class="cAddress weui-cell">
+                <view class='toblock'>收货地址：</view>
+                <view class='toblock'>
+                    <text class='toblock'>{{cAddr}}</text>
+                    <text class='toblock'>{{cName}}</text>
+                    <text class='toblock'>{{cTel}}</text>
+                </view>
+            </view>
+    </view>
+    <view id="paymentBtn">
+        <view >
+          <text>支付金额（含运费）:</text>
+          <text class='totalPrice spPrice'>¥{{totalPrice}}</text>
+        </view>
+        <button  class="weui-btn" type="primary">支付</button>
+    </view>
+</scroll-view>

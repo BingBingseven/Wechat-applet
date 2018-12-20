@@ -1,0 +1,39 @@
+/* pages/payment/payment.wxss */
+#paymentGoods{
+  border:3rpx solid #f3f3f3;
+}
+.spPrice{
+   color: #e17b34;
+}
+
+.spTitle{
+  color:#302833;
+}
+
+#paymentAddr{
+  font-size: 30rpx;
+}
+
+.totalPrice{
+  margin-left: 150rpx;
+}
+
+#paymentBtn{
+  font-size: 34rpx;
+  margin-top: 100rpx;
+  position: fixed;
+  bottom:0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  padding:30rpx;
+  box-sizing: border-box;
+  padding-bottom: 50rpx;
+  border-top:6rpx solid  #f3f3f3;
+}
+.toblock{
+  display: block;
+}
+.cAddress{
+  color: #302833;
+}

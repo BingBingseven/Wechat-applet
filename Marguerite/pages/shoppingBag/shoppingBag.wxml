@@ -1,0 +1,17 @@
+<view>
+   <view wx:if="{{shoppingBagList.length==0}}" class="textCenter">
+      <text>购物袋还是空的哟~</text>
+   </view>
+   <view class="weui-panel__bd" wx:for="{{shoppingBagList}}" wx:key="value">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.gImg1Src}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__desc spTitle">{{item.gName}}</view>
+            <view class="weui-media-box__desc ">{{item.CheckedColor}} + {{item.CheckedSize}} 码</view>
+            <view class="weui-media-box__info__meta spPrice">{{item.gPrice}}</view>
+          </view>
+        </navigator>
+    </view>
+</view>

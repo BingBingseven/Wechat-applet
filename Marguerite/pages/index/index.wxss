@@ -1,0 +1,33 @@
+/**index.wxss**/
+.container{
+  padding: 15rpx;
+}
+.swiperBox{
+  text-align: center;
+  height: 450rpx;
+}
+.swiperBox image{
+  width: 100%;
+}
+.gTitle{
+  font-size: 28rpx;
+  font-style: "light";
+  text-align: center;
+  margin:10rpx;
+}
+.gBox{
+  align-items: center;
+  padding:0;
+  display: flex;
+  flex-flow: row wrap;
+    justify-content:space-around;
+    border: 1rpx solid #f3f3f3;
+}
+.gBox view{
+  display: inline-block;
+  width: 200rpx;
+  height:200rpx;
+  margin: 15rpx;
+  background-size: contain
+}
+
